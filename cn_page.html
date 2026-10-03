@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js"></script>
+    <title>☕️ Coffee Nap</title>
+</head>
+
+<body>
+    <nav>
+        <button class="back_btn" onclick="window.location.href='./index.html'">
+            <img class="btn_ico" src="./img/back_ico.png" alt="">
+            Back
+        </button>
+
+        <button class="git_hub_btn" onclick="window.open('https:/github.com/Hazhevalov/CoffeeNap', '_blank')">
+            View on GitHub
+            <img class="btn_ico" src="./img/akar-icons_arrow-up-right.png" alt="">
+        </button>
+    </nav>
+
+    <main class="main_container">
+        <section class="project_info_container">
+            <div class="titles_container">
+                <div class="tags_container">
+                    <div class="tag">App</div>
+                    <div class="tag">iOS</div>
+                    <div class="tag">Android</div>
+                </div>
+
+                <h1>☕️ Coffee Nap</h1>
+
+                <div class="specifications">
+                    <ul>
+                        <!-- <li>
+                            <p>
+                                <span class="p_bold">Role: </span>
+                                <span>App Logic</span>
+                            </p>
+                        </li> -->
+
+                        <li>
+                            <p>
+                                <span class="p_bold">Language:</span>
+                                <span> C#, .NET, MAUI</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <span class="p_bold">Tools: </span>
+                                <span>Visual Studio, VS Code, Figma</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="p_bold">Timeline: </span>
+                                <span>33 days</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="list">
+                    <h3>Site map</h3>
+                    <ul>
+                        <li>
+                            <a id="site_map" href="#features">Features</a>
+                        </li>
+
+                        <li>
+                            <a id="site_map" href="#installation">Installation</a>
+                        </li>
+
+                        <li>
+                            <a id="site_map" href="#development">Development</a>
+                        </li>
+
+                        <li>
+                            <a id="site_map" href="#caffeine_calc">Caffeine calculation</a>
+                        </li>
+
+                        <li>
+                            <a id="site_map" href="#data_privacy">Data and privacy</a>
+                        </li>
+
+                        <li>
+                            <a id="site_map" href="#project_structure">Project structure</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="about_project_container">
+            <p>
+                CoffeeNap is a caffeine intake tracker built with .NET MAUI.
+                Log coffee, tea, and energy drinks, estimate their caffeine content,
+                and explore your consumption history through daily summaries and
+                calendar statistics.
+            </p>
+
+            <p>
+                <strong>Android is the primary platform.</strong>
+                CoffeeNap is developed primarily for Android, while its .NET MAUI
+                foundation also allows it to run on iOS, macOS (via Mac Catalyst),
+                and Windows.
+            </p>
+
+            <p>
+                Your data stays on your device in a local SQLite database.
+                No account or backend service is required.
+            </p>
+        </section>
+
+        <section class="coffee_showcase">
+            <div class="about_cn_container">
+                <article class="main_info_contaienr active reveal" data-screen="welcome">
+                    <div class="punkt">01</div>
+                    <h2>Start your day</h2>
+                    <p>Coffee Nap gives you a clear overview of your caffeine intake from the moment you start your day.</p>
+                </article>
+
+                <article class="main_info_contaienr reveal" data-screen="add">
+                    <div class="punkt">02</div>
+                    <h2>Log it in seconds.</h2>
+                    <p>Add coffee, tea or an energy drink in just a few taps and keep your daily intake up to date.</p>
+                </article>
+
+                <article class="main_info_contaienr reveal" data-screen="statistics">
+                    <div class="punkt">03</div>
+                    <h2>Know your habits</h2>
+                    <p>See how much caffeine you consume throughout the week and understand your daily patterns.</p>
+                </article>
+
+                <article class="main_info_contaienr reveal" data-screen="settings">
+                    <div class="punkt">04</div>
+                    <h2>Your data stays yours</h2>
+                    <p>All your data is stored locally on your device. No account, no cloud storage, no unnecessary tracking.</p>
+                </article>
+            </div>
+
+            <div class="iphone_container">
+                <div class="iphone">
+                    <div class="iphone-screen">
+                        <img id="app-screen" src="./img/Cn_scrins/Welcome screen 3.png" alt="Coffee Nap">
+                    </div>
+
+                    <img class="iphone-frame" src="./img/Cn_scrins/iphone.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="read_me_container">
+            <!-- Features -->
+            <div class="about_project_container reveal">
+                <h2 id="features">Features</h2>
+
+                    <p>
+                        <strong>Guided drink logging</strong> -
+                        enter preparation details for home-brewed coffee, choose a coffee
+                        drink and serving size when drinking out, or log tea and energy drinks.
+                    </p>
+
+                    <p>
+                        <strong>Caffeine estimates</strong> -
+                        calculations account for coffee bean type, brewing method,
+                        dose, or serving size, depending on the drink.
+                    </p>
+
+                    <p>
+                        <strong>Recipe reuse</strong> -
+                        quickly repeat your last saved recipe with a recalculated estimate.
+                    </p>
+
+                    <p>
+                        <strong>Daily overview</strong> -
+                        view caffeine intake, progress against the app's daily limit,
+                        and a breakdown by drink category.
+                    </p>
+
+                    <p>
+                        <strong>Calendar and statistics</strong> -
+                        browse consumption by day and review weekly and monthly summaries.
+                    </p>
+
+                    <p>
+                        <strong>Consumption history</strong> -
+                        review saved entries and delete individual records.
+                    </p>
+
+                    <p>
+                        <strong>English and Russian</strong> -
+                        select your preferred interface language in settings.
+                    </p>
+
+                    <p>
+                        <strong>Local data controls</strong> -
+                        delete your profile, settings, and consumption data from within the app.
+                    </p>
+            </div>
+
+            <!-- Installation -->
+            <div class="about_project_container reveal">
+                <h2 id="installation">Installation</h2>
+
+                <p>
+                    You can try CoffeeNap by installing the prebuilt Android APK.
+                </p>
+            </div>
+
+            <!-- Android -->
+            <div class="about_project_container reveal">
+                <h3>Android</h3>
+                <p>
+                        1. Go to the
+                        <a href="https://github.com/Hazhevalov/CoffeeNap/releases/latest">
+                            latest GitHub Release
+                        </a>.
+                </p>
+
+                <p>
+                        2. Download the <code>.apk</code> file from the
+                        <strong>Assets</strong> section.
+                </p>
+
+                <p>
+                        3. Open the downloaded APK on your Android device.
+                </p>
+
+                <p>
+                        4. If prompted, allow installation from unknown sources for the browser
+                        or file manager you used to download the APK.
+                </p>
+
+                <p>
+                        5. Install and launch CoffeeNap.
+                </p>
+
+                <blockquote>
+                    <p>
+                        <strong>Note:</strong>
+                        CoffeeNap is not distributed through Google Play, so Android may
+                        display a warning when installing the APK manually.
+                    </p>
+                </blockquote>
+
+                <p>
+                    The APK is provided as a signed release build for demonstration and testing.
+                </p>
+            </div>
+
+            <!-- Development -->
+            <div class="about_project_container reveal">
+                <h2 id="development">Development</h2>
+            </div>
+
+            <!-- Prerequisites -->
+            <div class="about_project_container reveal">
+                <h3>Prerequisites</h3>
+
+                <p>.NET 10 SDK.</p>
+                
+                <p>
+                    .NET MAUI workloads for your target platform.
+                </p>
+
+                <p>
+                    For Android: Android SDK, JDK 21, and an emulator or a connected
+                    device with USB debugging enabled.
+                </p>
+
+                <p>
+                    For Windows: a Windows development environment with the Windows SDK.
+                </p>
+
+                <p>
+                    For iOS and Mac Catalyst: a compatible macOS/Xcode development
+                    environment and the relevant .NET workloads.
+                </p>
+
+                <p>
+                    Clone this repository and open a terminal in its root directory.
+                    No API keys, environment files, or database server configuration are needed.
+                </p>
+            </div>
+
+            <!-- Android from the command line -->
+            <div class="about_project_container reveal">
+                <h3>Android from the command line</h3>
+
+                <p>
+                    Install the Android MAUI workload if it is not already available:
+                </p>
+
+                <div class="code_container">
+                    <pre><code>dotnet workload install maui-android</code></pre>
+                </div>
+
+                <p>
+                    Build the Android target:
+                </p>
+
+                <div class="code_container">
+                    <pre><code>dotnet build CoffeeNap/CoffeeNap.csproj -f net10.0-android -p:TargetFrameworks=net10.0-android</code></pre>
+                </div>
+
+                <p>
+                    With an emulator running or a device connected, build and launch:
+                </p>
+
+                <div class="code_container">
+                    <pre><code>dotnet build CoffeeNap/CoffeeNap.csproj -t:Run -f net10.0-android -p:TargetFrameworks=net10.0-android</code></pre>
+                </div>
+            </div>
+
+            <!-- Windows from the command line -->
+            <div class="about_project_container reveal">
+                <h3>Windows from the command line</h3>
+
+                <p>
+                    Run these commands on Windows:
+                </p>
+
+                <div class="code_container">
+                    <pre><code>
+dotnet workload install maui-windows
+dotnet build CoffeeNap/CoffeeNap.csproj -t:Run -f net10.0-windows10.0.19041.0 -p:TargetFrameworks=net10.0-windows10.0.19041.0
+                    </code></pre>
+                </div>
+
+                <p>
+                    The commands above restrict restore and build to the selected platform.
+                    The Windows development build runs without MSIX packaging.
+                </p>
+            </div>
+
+            <!-- caffeine calculation -->
+            <div class="about_project_container reveal">
+                <h2 id="caffeine_calc">Caffeine calculations</h2>
+
+                <p>
+                    CoffeeNap estimates caffeine from the information entered in the drink flow:
+                </p>
+
+                <table class="permissions-table">
+                    <thead>
+                        <tr>
+                            <th>Drink</th>
+                            <th>Calculation basis</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Home-brewed coffee</td>
+                            <td>
+                                Coffee dose, bean type, and brewing-method extraction factor
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Coffee outside the home</td>
+                            <td>
+                                Estimated espresso shots for the selected drink and serving size
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Tea</td>
+                            <td>
+                                Tea type and dry tea amount
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Energy drink</td>
+                            <td>
+                                Drink volume and the app's default caffeine concentration
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>
+                    Saved entries retain the caffeine estimate shown when they were recorded.
+                    History and statistics use that saved value.
+                </p>
+
+                <p>
+                    <strong>Detailed documentation: </strong>
+                    <a href="https://github.com/Hazhevalov/CoffeeNap/tree/master/docs"> Git Hub </a>
+                </p>
+            </div>
+
+            <!-- data and privacy -->
+            <div class="about_project_container reveal">
+                <h2 id="data_privacy">Data and privacy</h2>
+
+                <p>
+                    The app stores its profile, settings, consumption history, and last recipe
+                    in <code>caffeine_app.db3</code> in the application's local data directory.
+                    It does not use an account system, cloud synchronization, advertising,
+                    or analytics services.
+                </p>
+
+                <p>
+                    The Android configuration disables system backup and excludes app data
+                    from cloud backup and device transfer. Backup behavior on other platforms
+                    depends on the operating system. Uninstalling the app or clearing its data
+                    may remove your records.
+                </p>
+
+                <p>
+                    The full privacy policy is available inside the app.
+                </p>
+            </div>
+
+            <!-- project_structure -->
+            <div class="about_project_container reveal">
+                <h2 id="project_structure">Project structure</h2>
+
+                <div class="code_container">
+                    <pre><code>
+CoffeeNap/
+Configuration/   Dependency injection registration
+Controls/        Reusable UI controls and drink-entry steps
+Data/            SQLite database initialization and migrations
+Helpers/         Formatting, validation, and UI utilities
+Models/          Profiles, settings, drinks, recipes, and statistics
+Platforms/       Platform-specific startup and lifecycle code
+Resources/       Images, fonts, styles, and localization
+Services/        Calculations, persistence, navigation, and statistics
+ViewModels/      Presentation state and commands
+Views/           Application pages
+docs/            Calculation and Android release documentation
+scripts/         Android publishing script
+CoffeeNap.slnx   Solution file
+</code></pre>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/phone_script.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

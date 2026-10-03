@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Inter;
+    color: var(--text-color);
+    margin: 0px;
+}
+
+.gray{
+    color: var(--not-important-text-color);
+
+}
+
+.black{
+    color: var(--text-color);
+}
+
+h2{
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Inter;
+    color: var(--text-color);
+    margin: 0px;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Inter;
+    color: var(--text-color);
+    margin: 0px;
+}
+
+p{
+    font-size: 20px;
+    font-family: Inter;
+    color: var(--text-color);
+    line-height: 1.5;
+    margin: 0px;
+}
+
+.p_bold{
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: bold;
+    color: var(--text-color);
+    line-height: 1.5;
+    margin: 0px;
+}
+
+li, .list_elements{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    align-content: center;
+    font-size: 16px;
+    font-family: Inter;
+    color: var(--not-important-text-color);
+    margin: 0px;
+    text-decoration: none;
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+li>img{
+    width: 24px;
+    height: 24px;
+}
+
+.tap_text{
+    font-size: 12px;
+    font-family: Inter;
+    color: var(--text-color);
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.5s ease;
+    position: relative;
+}
+
+#site_map::before {
+    content: "";
+    position: absolute;
+
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 0;
+    height: 2px;
+    background: #000;
+
+    transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#site_map:hover::before {
+    width: 10px;
+}
+
+a:visited{
+    color: var(--not-important-text-color);
+}
+
+a:link{
+    color: var(--not-important-text-color);
+}
+
+a:hover{
+    color: var(--text-color);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card>img{
+    width: 100%;
+    border-radius: 15px;
+}
