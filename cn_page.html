@@ -71,23 +71,19 @@
                         </li>
 
                         <li>
+                            <a id="site_map" href="#project_case">Project Case</a>
+                        </li>
+
+                        <li>
+                            <a id="site_map" href="#project_structure">Project Structure</a>
+                        </li>
+
+                        <li>
+                            <a id="site_map" href="#caffeine_calc">Caffeine Calculation</a>
+                        </li>
+
+                        <li>
                             <a id="site_map" href="#installation">Installation</a>
-                        </li>
-
-                        <li>
-                            <a id="site_map" href="#development">Development</a>
-                        </li>
-
-                        <li>
-                            <a id="site_map" href="#caffeine_calc">Caffeine calculation</a>
-                        </li>
-
-                        <li>
-                            <a id="site_map" href="#data_privacy">Data and privacy</a>
-                        </li>
-
-                        <li>
-                            <a id="site_map" href="#project_structure">Project structure</a>
                         </li>
                     </ul>
                 </div>
@@ -202,144 +198,58 @@
                     </p>
             </div>
 
-            <!-- Installation -->
+            <!-- Project Case -->
             <div class="about_project_container reveal">
-                <h2 id="installation">Installation</h2>
+                <h2 id="project_case">Project Case</h2>
 
                 <p>
-                    You can try CoffeeNap by installing the prebuilt Android APK.
+                    CoffeeNap was my first serious software project built around a structured development process. Before development started, we created a plan, defined the main functionality, and divided responsibilities between two developers.
+                </p>
+
+                <p>
+                    I was responsible for the technical side of the project: application logic, navigation, data handling, database integration, calculations, and internal functionality. The visual design and XAML were handled by another developer. For collaboration and version control, we used GitHub, which I learned specifically for this project.
+                </p>
+
+                <p>
+                    The application design was created in Figma. We also used Notion was used to plan features, logic, and development tasks.
+                </p>
+
+                <p>
+                    We chose .NET MAUI as the main framework. I had no previous practical experience with it, so I had to learn the technology during development by reading documentation, testing different approaches, and using AI tools as an additional assistant.
+                </p>
+
+                <p>
+                    The main problem was the lack of practical project experience. Many architectural, navigation, storage, and performance-related problems appeared only during development and had to be solved in real time.
                 </p>
             </div>
 
-            <!-- Android -->
+            <!-- project_structure -->
             <div class="about_project_container reveal">
-                <h3>Android</h3>
-                <p>
-                        1. Go to the
-                        <a href="https://github.com/Hazhevalov/CoffeeNap/releases/latest">
-                            latest GitHub Release
-                        </a>.
-                </p>
-
-                <p>
-                        2. Download the <code>.apk</code> file from the
-                        <strong>Assets</strong> section.
-                </p>
-
-                <p>
-                        3. Open the downloaded APK on your Android device.
-                </p>
-
-                <p>
-                        4. If prompted, allow installation from unknown sources for the browser
-                        or file manager you used to download the APK.
-                </p>
-
-                <p>
-                        5. Install and launch CoffeeNap.
-                </p>
-
-                <blockquote>
-                    <p>
-                        <strong>Note:</strong>
-                        CoffeeNap is not distributed through Google Play, so Android may
-                        display a warning when installing the APK manually.
-                    </p>
-                </blockquote>
-
-                <p>
-                    The APK is provided as a signed release build for demonstration and testing.
-                </p>
-            </div>
-
-            <!-- Development -->
-            <div class="about_project_container reveal">
-                <h2 id="development">Development</h2>
-            </div>
-
-            <!-- Prerequisites -->
-            <div class="about_project_container reveal">
-                <h3>Prerequisites</h3>
-
-                <p>.NET 10 SDK.</p>
-                
-                <p>
-                    .NET MAUI workloads for your target platform.
-                </p>
-
-                <p>
-                    For Android: Android SDK, JDK 21, and an emulator or a connected
-                    device with USB debugging enabled.
-                </p>
-
-                <p>
-                    For Windows: a Windows development environment with the Windows SDK.
-                </p>
-
-                <p>
-                    For iOS and Mac Catalyst: a compatible macOS/Xcode development
-                    environment and the relevant .NET workloads.
-                </p>
-
-                <p>
-                    Clone this repository and open a terminal in its root directory.
-                    No API keys, environment files, or database server configuration are needed.
-                </p>
-            </div>
-
-            <!-- Android from the command line -->
-            <div class="about_project_container reveal">
-                <h3>Android from the command line</h3>
-
-                <p>
-                    Install the Android MAUI workload if it is not already available:
-                </p>
-
-                <div class="code_container">
-                    <pre><code>dotnet workload install maui-android</code></pre>
-                </div>
-
-                <p>
-                    Build the Android target:
-                </p>
-
-                <div class="code_container">
-                    <pre><code>dotnet build CoffeeNap/CoffeeNap.csproj -f net10.0-android -p:TargetFrameworks=net10.0-android</code></pre>
-                </div>
-
-                <p>
-                    With an emulator running or a device connected, build and launch:
-                </p>
-
-                <div class="code_container">
-                    <pre><code>dotnet build CoffeeNap/CoffeeNap.csproj -t:Run -f net10.0-android -p:TargetFrameworks=net10.0-android</code></pre>
-                </div>
-            </div>
-
-            <!-- Windows from the command line -->
-            <div class="about_project_container reveal">
-                <h3>Windows from the command line</h3>
-
-                <p>
-                    Run these commands on Windows:
-                </p>
+                <h2 id="project_structure">Project Structure</h2>
 
                 <div class="code_container">
                     <pre><code>
-dotnet workload install maui-windows
-dotnet build CoffeeNap/CoffeeNap.csproj -t:Run -f net10.0-windows10.0.19041.0 -p:TargetFrameworks=net10.0-windows10.0.19041.0
-                    </code></pre>
+CoffeeNap/
+Configuration/   Dependency injection registration
+Controls/        Reusable UI controls and drink-entry steps
+Data/            SQLite database initialization and migrations
+Helpers/         Formatting, validation, and UI utilities
+Models/          Profiles, settings, drinks, recipes, and statistics
+Platforms/       Platform-specific startup and lifecycle code
+Resources/       Images, fonts, styles, and localization
+Services/        Calculations, persistence, navigation, and statistics
+ViewModels/      Presentation state and commands
+Views/           Application pages
+docs/            Calculation and Android release documentation
+scripts/         Android publishing script
+CoffeeNap.slnx   Solution file
+</code></pre>
                 </div>
-
-                <p>
-                    The commands above restrict restore and build to the selected platform.
-                    The Windows development build runs without MSIX packaging.
-                </p>
             </div>
 
             <!-- caffeine calculation -->
             <div class="about_project_container reveal">
-                <h2 id="caffeine_calc">Caffeine calculations</h2>
+                <h2 id="caffeine_calc">Caffeine Calculation</h2>
 
                 <p>
                     CoffeeNap estimates caffeine from the information entered in the drink flow:
@@ -395,51 +305,54 @@ dotnet build CoffeeNap/CoffeeNap.csproj -t:Run -f net10.0-windows10.0.19041.0 -p
                 </p>
             </div>
 
-            <!-- data and privacy -->
+            <!-- Installation -->
             <div class="about_project_container reveal">
-                <h2 id="data_privacy">Data and privacy</h2>
+                <h2 id="installation">Installation</h2>
 
                 <p>
-                    The app stores its profile, settings, consumption history, and last recipe
-                    in <code>caffeine_app.db3</code> in the application's local data directory.
-                    It does not use an account system, cloud synchronization, advertising,
-                    or analytics services.
-                </p>
-
-                <p>
-                    The Android configuration disables system backup and excludes app data
-                    from cloud backup and device transfer. Backup behavior on other platforms
-                    depends on the operating system. Uninstalling the app or clearing its data
-                    may remove your records.
-                </p>
-
-                <p>
-                    The full privacy policy is available inside the app.
+                    You can try CoffeeNap by installing the prebuilt Android APK.
                 </p>
             </div>
 
-            <!-- project_structure -->
+            <!-- Android -->
             <div class="about_project_container reveal">
-                <h2 id="project_structure">Project structure</h2>
+                <h3>Android</h3>
+                <p>
+                        1. Go to the
+                        <a href="https://github.com/Hazhevalov/CoffeeNap/releases/latest">
+                            latest GitHub Release
+                        </a>.
+                </p>
 
-                <div class="code_container">
-                    <pre><code>
-CoffeeNap/
-Configuration/   Dependency injection registration
-Controls/        Reusable UI controls and drink-entry steps
-Data/            SQLite database initialization and migrations
-Helpers/         Formatting, validation, and UI utilities
-Models/          Profiles, settings, drinks, recipes, and statistics
-Platforms/       Platform-specific startup and lifecycle code
-Resources/       Images, fonts, styles, and localization
-Services/        Calculations, persistence, navigation, and statistics
-ViewModels/      Presentation state and commands
-Views/           Application pages
-docs/            Calculation and Android release documentation
-scripts/         Android publishing script
-CoffeeNap.slnx   Solution file
-</code></pre>
-                </div>
+                <p>
+                        2. Download the <code>.apk</code> file from the
+                        <strong>Assets</strong> section.
+                </p>
+
+                <p>
+                        3. Open the downloaded APK on your Android device.
+                </p>
+
+                <p>
+                        4. If prompted, allow installation from unknown sources for the browser
+                        or file manager you used to download the APK.
+                </p>
+
+                <p>
+                        5. Install and launch CoffeeNap.
+                </p>
+
+                <blockquote>
+                    <p>
+                        <strong>Note:</strong>
+                        CoffeeNap is not distributed through Google Play, so Android may
+                        display a warning when installing the APK manually.
+                    </p>
+                </blockquote>
+
+                <p>
+                    The APK is provided as a signed release build for demonstration and testing.
+                </p>
             </div>
         </section>
     </main>
