@@ -3,4 +3,8 @@
 @import url(./pages/mainPage.css);
 @import url(./base.css);
 @import url(./components.css);
-@import url(./pages/cn_page.css);
+@import url(./pages/cnPage.css);
+@import url(./adaptive/cnPageAd.css);
+@import url(./adaptive/mainPageAd.css);
+@import url(./adaptive/mainPageAd.css);
+@import url(./adaptive/maPageAd.css);

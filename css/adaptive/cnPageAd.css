@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+    .main_container{
+        gap: 50px;
+    }
+    
+    .about_cn_container{
+        display: none;
+        margin-bottom: 0px;
+    }
+
+    .iphone_container{
+        display: none;
+    }
+
+    .coffee_showcase{
+        display: flex;
+    }
+
+    article{
+        margin: 50px 0px;
+    }
+}
