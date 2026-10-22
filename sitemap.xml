@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    <url>
-        <loc>https://hazhevalov.github.io/Portfolio/</loc>
-    </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-    <url>
-        <loc>https://hazhevalov.github.io/Portfolio/cn_page.html</loc>
-    </url>
-
-    <url>
-        <loc>https://hazhevalov.github.io/Portfolio/music_app_page.html</loc>
-    </url>
-
+  <url>
+       <loc>https://hazhevalov.github.io/Portfolio/</loc>
+       <lastmod>2026-10-22T07:22:55+00:00</lastmod>
+       <priority>1.0000</priority>
+  </url>
+  <url>
+       <loc>https://hazhevalov.github.io/Portfolio/download/CV_ArtemHazhevalov.pdf</loc>
+       <lastmod>2026-10-22T07:22:55+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://hazhevalov.github.io/Portfolio/cn_page.html</loc>
+       <lastmod>2026-10-22T07:22:55+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://hazhevalov.github.io/Portfolio/music_app_page.html</loc>
+       <lastmod>2026-10-22T07:22:55+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
 </urlset>
