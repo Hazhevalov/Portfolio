@@ -14,7 +14,7 @@ body{
     animation: contentReveal 1s ease-out 0.7s forwards;
 }
 
-.main_container{
+main{
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@ body{
     gap: 100px;
 }
 
-nav{
+/* nav{
     padding-top: 20px;
     width: 60%;
     display: flex;
@@ -31,7 +31,62 @@ nav{
     justify-content: space-between;
     align-items: center;
     align-content: center;
+} */
+
+
+header {
+    position: sticky;
+    top: 20px;
+    z-index: 12;
+    font-family: Inter;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+
+    width: 60%;
+    padding: 20px;
+
+    border: 1px solid transparent;
+    border-radius: 24px;
+    background: transparent;
+
+    animation: navbar-collapse linear both;
+                animation-timeline: scroll(root);
+                animation-range: 0px 100px;
+
+    transition: box-shadow 0.3s ease,
+                gap 0.4s ease,
+                padding 0.4s ease,
+                width 0.4s ease;
 }
+
+header nav {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+header a {
+    color: var(--text-color);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+@keyframes navbar-collapse {
+    to {
+        width: 30%;
+        /* gap: 5%; */
+        padding: 5px 20px;
+        background-color: var(--block-background-color);
+        border-color: var(--divider-color);
+        border-radius: 22px;
+        box-shadow: 0 4px 20px rgb(0 0 0 / 8%);
+    }
+}
+
 
 .hello_container{
     display: flex;
@@ -48,12 +103,6 @@ nav{
 .tags_container{
     display: flex;
     flex-direction: row;
-    gap: 10px;
-}
-
-.list{
-    display: flex;
-    flex-direction: column;
     gap: 10px;
 }
 

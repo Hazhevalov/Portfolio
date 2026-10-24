@@ -88,25 +88,6 @@ a{
     position: relative;
 }
 
-#site_map::before {
-    content: "";
-    position: absolute;
-
-    left: -15px;
-    top: 50%;
-    transform: translateY(-50%);
-
-    width: 0;
-    height: 2px;
-    background: #000;
-
-    transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-#site_map:hover::before {
-    width: 10px;
-}
-
 a:visited{
     color: var(--not-important-text-color);
 }
