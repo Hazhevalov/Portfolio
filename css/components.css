@@ -10,6 +10,36 @@
     cursor: pointer;
 }
 
+.black_btn{
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 30px;
+
+    background-color: var(--text-color);
+    color: var(--block-background-color);
+    font-size: 16px;
+
+    border-radius: 10px;
+    border: none;
+
+    cursor: pointer;
+}
+
+.gray_btn{
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 30px;
+
+    background-color: var(--divider-color);
+    color: var(--text-color);
+    font-size: 16px;
+
+    border-radius: 10px;
+    border: none;
+
+    cursor: pointer;
+}
+
 .git_ico{
     padding: 15px;
     border-radius: 100px;

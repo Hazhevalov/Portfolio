@@ -7,8 +7,14 @@ h1{
     font-size: 36px;
     font-weight: bold;
     font-family: Inter;
+    text-align: center;
     color: var(--text-color);
     margin: 0px;
+}
+
+.subtitle{
+    font-size: 20px;
+    text-align: center;
 }
 
 .gray{

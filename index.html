@@ -43,74 +43,117 @@
         <!-- Hello container -->
         <div class="hello_container reveal">
             <div class="titles_container">
-                <div class="tags_container">
-                    <div class="tag">
-                        <a href="#tech_stack" class="tap_text">C#</a>
-                    </div>
-
-                    <div class="tag">
-                        <a href="#tech_stack" class="tap_text">.NET</a>
+                <div class="emoji_container">
+                    <div class="emoji_divider">
+                        <h1>👋</h1>
                     </div>
                 </div>
 
-                <h1>
-                    <span class="gray">Hi, I’m</span>
-                    <span class="black">Artem Hazhevalov 👋</span>
-                    <br>
-                    <span class="gray">and I’m</span>
-                    <span class="black">a C# developer</span>
-                </h1>
+                <div class="titles">
+                    <h1>
+                        <span>Hi, I’m Artem Hazhevalov <br></span>
+                    </h1>
 
-                <p><a href="mailto:hazhevalov@gmail.com">hazhevalov@gmail.com</a></p>
+                    <h1>
+                        <span>and I’m a
+                            <span id="tech-tag" class="tag">C#</span>
+                            developer
+                        </span>
+                    </h1>
+                </div>
 
                 <p class="subtitle">
                     I'm a C# / .NET developer with a strong interest in backend 
                     development, databases, and the logic behind software.
                 </p>
+
+                <div class="btn_container">
+                    <button class="black_btn">Contacts</button>
+                    <button class="gray_btn">My CV</button>
+                </div>
             </div>
-
-            <!-- <div class="list">
-                <h3>Site map</h3>
-                <ul>
-                    <li>
-                        <a id="site_map" href="#about">About me</a>
-                    </li>
-
-                    <li>
-                        <a id="site_map" href="#projects">My projects</a>
-                    </li>
-
-                    <li>
-                        <a id="site_map" href="#tech_stack">Tech Stack</a>
-                    </li>
-                </ul>
-            </div> -->
         </div>
 
         <!-- About Me -->
         <div id="about" class="about_me_container reveal">
-            <h2>About me</h2>
+            <h2>From Idea to Code</h2>
+            <p class="subtitle">About me</p>
 
-            <div>
-                <p class="about_me_text">
-                    I’ve been interested in computers from an early age, which gradually led me to     programming. I started by learning Python, HTML, and CSS on my own, and later began working with C# through Unity, where I developed my first game projects and became more familiar with application logic and object-oriented programming.</p>
+            <div class="storytailing">
+                <!-- THE BEGINNING -->
+                <div id="left_block" class="story_block one">
+                    <div class="story_title_container">
+                        <div id="the_beginning_emoji" class="emoji_divider">
+                            <h1>🎬</h1>
+                        </div>
+                        <h3>THE <br> BEGGINNING</h3>
+                    </div>
+                    <p>I’ve been interested in programming since I was a kid. 
+                        At 12, I wrote my first project — a simple calculator 
+                        in C# — and since then, I’ve been gradually diving deeper 
+                        into software development.</p>
+                </div>
+                
+                <div class="arrow step1">
+                    <img src="img/step1.png" alt="">
+                </div>
 
-                <p class="about_me_text">
-                    After joining IT STEP Academy in Dnipro, Ukraine, I began studying C# and the .NET ecosystem in greater depth, along with SQL, databases, and C++. This gave me a stronger technical foundation and allowed me to move from smaller educational projects to more complete applications.</p>
+                <!-- MY APPROACH -->
+                <div id="right_block" class="story_block two">
+                    <div class="story_title_container">
+                        <div id="my_apoarch_emoji" class="emoji_divider">
+                            <h1>🧠</h1>
+                        </div>
+                        <h3>MY <br> APPROACH</h3>
+                    </div>
+                    <p>What I enjoy most is the internal side of development — 
+                        designing logic, thinking through how different 
+                        parts of a program should work, and finding ways 
+                        to make code cleaner, faster, and more efficient. 
+                        I’m a calm person who likes to understand every 
+                        detail and keep improving things until I’m satisfied 
+                        with the result.</p>
+                </div>
 
-                <p class="about_me_text">
-                    With this experience, I started developing my own projects, including CoffeeNap and MusicStore. Working on them introduced me to many practical challenges involving architecture, databases, application logic, performance, and maintainability. Solving these problems became one of the most valuable parts of my learning.</p>
+                <div class="arrow step2">
+                    <img src="img/step2.png" alt="">
+                </div>
 
-                <p class="about_me_text">
-                    My largest project is CoffeeNap, a caffeine tracking
-                    application built with .NET MAUI and SQLite. 
-                    I developed its internal logic, navigation, data handling, 
-                    local database integration, caffeine calculation system, 
-                    localization logic, and other application functionality. More details about the challenges I faced and the decisions I made during development can be found on the individual project pages.</p>
+                <!-- MY PRACTICE -->
+                <div id="left_block" class="story_block three">
+                    <div class="story_title_container">
+                        <div id="my_practice_emoji" class="emoji_divider">
+                            <h1>🎮</h1>
+                        </div>
+                        <h3>MY <br> PRACTICE</h3>
+                    </div>
+                    <p>For the past 2–3 years, I’ve been actively studying C# 
+                        at the STEP Academy in Dnipro, Ukraine. I chose C# 
+                        because of how versatile it is: you can use it to 
+                        build games, mobile applications, backend logic, 
+                        and many other types of software. During my studies, 
+                        I’ve developed three games and a mobile application 
+                        called Coffee Nap.</p>
+                </div>
 
-                <p class="about_me_text">
-                    Today, my main focus is C# .NET and 
-                    backend-oriented software development.</p>
+                <div class="arrow step3">
+                    <img src="img/step3.png" alt="">
+                </div>
+
+                <!-- WHAT'S NEXT -->
+                <div id="centered_block" class="story_block four">
+                    <div class="story_title_container">
+                        <div id="whats_next_emoji" class="emoji_divider">
+                            <h1>🚀</h1>
+                        </div>
+                        <h3>WHAT'S NEXT</h3>
+                    </div>
+                    <p>Right now, I’m focused on deepening my 
+                        knowledge of C#, databases, and .NET. 
+                        My goal is to find my first job as a developer, 
+                        gain real-world experience, and gradually grow into 
+                        an independent software engineer.</p>
+                </div>
             </div>
 
             <a class="cv_block" href="./download/CV_ArtemHazhevalov.pdf" download="CV_ArtemHazhevalov.pdf" aria-label="Download Artem Hazhevalov CV (PDF)">

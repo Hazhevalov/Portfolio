@@ -41,3 +41,20 @@ const revealObserver = new IntersectionObserver((entries) => {
 reveals.forEach((element) => {
     revealObserver.observe(element);
 });
+
+// замена текста внутри тега
+const techTag = document.getElementById("tech-tag");
+
+const technologies = ["C#", ".NET", "ASP.NET", "SQL"];
+
+let currentIndex = 0;
+
+setInterval(() => {
+    techTag.classList.add("changing");
+
+    setTimeout(() => {
+        currentIndex = (currentIndex + 1) % technologies.length;
+        techTag.textContent = technologies[currentIndex];
+        techTag.classList.remove("changing");
+    }, 300);
+}, 3000);

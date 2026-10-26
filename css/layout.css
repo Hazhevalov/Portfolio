@@ -45,7 +45,7 @@ header {
     justify-content: space-between; 
 
     width: 60%;
-    padding: 20px;
+    padding: 10px 20px;
 
     border: 1px solid transparent;
     border-radius: 24px;
@@ -91,16 +91,72 @@ header a {
 .hello_container{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 50px;
+}
+
+.titles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 > span{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.tag {
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    font-family: Inter;
+    background-color: var(--block-background-color);
+    border: 1px solid var(--divider-color);
+    padding: 10px 20px;
+    border-radius: 100px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    vertical-align: middle;
+}
+
+.tag.changing {
+    opacity: 0;
+    transform: translateY(8px);
 }
 
 .titles_container{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 
-.tags_container{
+.emoji_container{
+    display: flex;
+    justify-content: center;
+}
+
+.emoji_divider{
+    width: 48px;
+    height: 48px;
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--block-background-color);
+    border: var(--divider-color) 1px solid;
+    border-radius: 20px;
+}
+
+.btn_container{
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -109,7 +165,100 @@ header a {
 .about_me_container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
+}
+
+.storytailing {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: 20px;
+    grid-template-rows: repeat(4);
+    row-gap: 50px;
+}
+
+.story_title_container{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+.story_block{
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    background-color: var(--block-background-color);
+    border: var(--divider-color) 1px solid;
+    border-radius: 20px;
+}
+
+.one{
+    grid-column: 1 / 8;
+    grid-row: 1;
+}
+
+.two{
+    grid-column: 5 / 13;
+    grid-row: 2;
+}
+
+.three{
+    grid-column: 1 / 9;
+    grid-row: 3;
+}
+
+.four{
+    grid-column: 3 / 10;
+    grid-row: 4;
+}
+
+.step1{
+    width: fit-content;
+    height: fit-content;
+    grid-column: 7;
+    grid-row: 1;
+}
+
+.step2{
+    width: fit-content;
+    height: fit-content;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.step3{
+    width: fit-content;
+    height: fit-content;
+    grid-column: 8;
+    grid-row: 3;
+}
+
+#the_beginning_emoji{
+    background-color: var(--gray-color);
+    border: none;
+}
+
+#my_apoarch_emoji{
+    background-color: var(--pink-color);
+    border: none;
+}
+
+#my_practice_emoji{
+    background-color: var(--orange-color);
+    border: none;
+}
+
+#whats_next_emoji{
+    background-color: var(--yellow-color);
+    border: none;
 }
 
 .about_me_text{
