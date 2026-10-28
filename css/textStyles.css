@@ -80,10 +80,10 @@ li>img{
     height: 24px;
 }
 
-.tap_text{
-    font-size: 12px;
+.tag_text{
+    font-size: 16px;
     font-family: Inter;
-    color: var(--text-color);
+    color: var(--not-important-text-color);
     margin: 0px;
 }
 

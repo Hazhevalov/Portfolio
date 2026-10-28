@@ -75,13 +75,14 @@
         </div>
 
         <!-- About Me -->
-        <div id="about" class="about_me_container reveal">
-            <h2>From Idea to Code</h2>
-            <p class="subtitle">About me</p>
-
+        <div id="about" class="about_me_container">
+            <div class="titles">
+                <h2>From Idea to Code</h2>
+                <p class="subtitle">About me</p>
+            </div>
             <div class="storytailing">
                 <!-- THE BEGINNING -->
-                <div id="left_block" class="story_block one">
+                <div id="left_block" class="story_block one reveal">
                     <div class="story_title_container">
                         <div id="the_beginning_emoji" class="emoji_divider">
                             <h1>🎬</h1>
@@ -93,13 +94,13 @@
                         in C# — and since then, I’ve been gradually diving deeper 
                         into software development.</p>
                 </div>
-                
-                <div class="arrow step1">
+
+                <div class="arrow step1 reveal">
                     <img src="img/step1.png" alt="">
                 </div>
 
                 <!-- MY APPROACH -->
-                <div id="right_block" class="story_block two">
+                <div id="right_block" class="story_block two reveal">
                     <div class="story_title_container">
                         <div id="my_apoarch_emoji" class="emoji_divider">
                             <h1>🧠</h1>
@@ -115,12 +116,12 @@
                         with the result.</p>
                 </div>
 
-                <div class="arrow step2">
+                <div class="arrow step2 reveal">
                     <img src="img/step2.png" alt="">
                 </div>
 
                 <!-- MY PRACTICE -->
-                <div id="left_block" class="story_block three">
+                <div id="left_block" class="story_block three reveal">
                     <div class="story_title_container">
                         <div id="my_practice_emoji" class="emoji_divider">
                             <h1>🎮</h1>
@@ -136,12 +137,12 @@
                         called Coffee Nap.</p>
                 </div>
 
-                <div class="arrow step3">
+                <div class="arrow step3 reveal">
                     <img src="img/step3.png" alt="">
                 </div>
 
                 <!-- WHAT'S NEXT -->
-                <div id="centered_block" class="story_block four">
+                <div id="centered_block" class="story_block four reveal">
                     <div class="story_title_container">
                         <div id="whats_next_emoji" class="emoji_divider">
                             <h1>🚀</h1>
@@ -155,19 +156,13 @@
                         an independent software engineer.</p>
                 </div>
             </div>
-
-            <a class="cv_block" href="./download/CV_ArtemHazhevalov.pdf" download="CV_ArtemHazhevalov.pdf" aria-label="Download Artem Hazhevalov CV (PDF)">
-                <div class="cv_content">
-                    <img class="cv_ico" src="./img/file.png" alt="file icon">
-                    <p>CV_ArtemHazhevalov.pdf</p>
-                </div>
-                <img class="cv_ico" src="./img/dwnld.png" alt="download icon">
-            </a>
         </div>
 
         <!-- Portfolio Projects -->
         <div id="projects" class="my_projects_container reveal">
-            <h2>My projects</h2>
+            <div class="titles">
+                <h2>My projects</h2>
+            </div>
 
             <div class="cards_container">
                 <!-- Карточка с CN -->
@@ -196,7 +191,9 @@
 
         <!-- Tech Stack -->
         <div id="tech_stack" class="tech_stack_container reveal">
-            <h2>Tech Stack</h2>
+            <div class="titles">
+                <h2>Tech Stack</h2>
+            </div>
 
             <div class="stack_lists">
                 <div class="list">
@@ -252,6 +249,21 @@
                         <li>aiogram</li>
                     </ul>
                 </div> -->
+            </div>
+
+            <!-- CV / Status -->
+            <div class="cv_block">
+                <p class="tag_text">Current status</p>
+                <div class="cv_content">
+                    <h3>Still building. Still learning.</h3>
+                    <p>Focused on C#, databases and .NET. Looking for the next opportunity to grow.</p>
+                    <p class="tag_text">Open to opportunities</p>
+                </div>
+
+                <div class="btn_container">
+                    <button class="black_btn">Contacts</button>
+                    <button class="gray_btn">My CV</button>
+                </div>
             </div>
         </div>
 
