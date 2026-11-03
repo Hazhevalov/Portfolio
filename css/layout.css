@@ -19,7 +19,7 @@ main{
     display: flex;
     flex-direction: column;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     gap: 100px;
 }
 
@@ -45,7 +45,7 @@ header {
     justify-content: space-between; 
 
     width: 60%;
-    padding: 10px 20px;
+    padding: 15px 20px;
 
     border: 1px solid transparent;
     border-radius: 24px;
@@ -66,7 +66,7 @@ header nav {
     align-items: center;
     align-content: center;
     justify-content: center;
-    gap: 24px;
+    gap: 20px;
 }
 
 header a {
@@ -78,8 +78,7 @@ header a {
 @keyframes navbar-collapse {
     to {
         width: 30%;
-        /* gap: 5%; */
-        padding: 5px 20px;
+        padding: 15px 20px;
         background-color: var(--block-background-color);
         border-color: var(--divider-color);
         border-radius: 22px;
@@ -154,6 +153,9 @@ h1 > span{
     background-color: var(--block-background-color);
     border: var(--divider-color) 1px solid;
     border-radius: 20px;
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.035),
+        0 2px 6px rgba(0, 0, 0, 0.025);
 }
 
 .btn_container{
@@ -198,10 +200,14 @@ h1 > span{
     background-color: var(--block-background-color);
     border: var(--divider-color) 1px solid;
     border-radius: 20px;
+
+    box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.035),
+    0 2px 6px rgba(0, 0, 0, 0.025);
 }
 
 .one{
-    grid-column: 1 / 8;
+    grid-column: 1 / 9;
     grid-row: 1;
 }
 
@@ -216,14 +222,14 @@ h1 > span{
 }
 
 .four{
-    grid-column: 3 / 10;
+    grid-column: 3 / 11;
     grid-row: 4;
 }
 
 .step1{
     width: fit-content;
     height: fit-content;
-    grid-column: 7;
+    grid-column: 8;
     grid-row: 1;
 }
 
@@ -261,27 +267,7 @@ h1 > span{
     border: none;
 }
 
-.about_me_text{
-    margin: 20px 0px;
-}
-
-.download_cv_container{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-}
-
-.cv_container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-}
-
-.cv_block{
-    width: 100%;
+.current_status_block{
     padding: 20px;
 
     background-color: var(--block-background-color);
@@ -290,21 +276,19 @@ h1 > span{
 
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     
-    cursor: pointer;
     transition: background-color 0.5s ease;
-}
-
-.cv_ico{
-    width: 24px;
-    height: 24px;
 }
 
 .cv_content{
     display: flex;
     flex-direction: column;
     gap: 2px;
+}
+
+.cv_content>ul>li{
+    list-style: disc;
 }
 
 .my_projects_container{
@@ -352,12 +336,17 @@ h1 > span{
     padding: 20px;
 }
 
-.made_by_container{
+footer{
+    width: 60%;
+    padding: 20px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    align-content: center;
+
+    background-color: var(--block-background-color);
+    border: var(--divider-color) 1px solid;
+    border-radius: 15px;
 }
 
 .project_info_container{
